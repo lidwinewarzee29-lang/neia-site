@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="yYcrKBIXR35LPwOcx8UAuilW_2bNiXzOO8noq24JeC0" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YRBJK8ZDNC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YRBJK8ZDNC');
+</script>
+<title>Neïa — Rencontrez autrement</title>
+<style>
+:root{
+  --ink:#233323; --forest:#3C5A38; --forest-soft:#4F6D49; --sage:#93A788;
+  --terracotta:#D98555; --terracotta-soft:#E6A87C; --cream:#F8F2E7;
+  --sand:#EFE6D3; --sand-line:#DDD0B4; --max:1100px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{font-family:Georgia,'Iowan Old Style','Palatino Linotype',Palatino,serif;font-weight:600;color:var(--forest);margin:0;letter-spacing:-0.01em;}
+a{color:inherit;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+
+/* nav */
+nav{padding:22px 0;border-bottom:1px solid var(--sand-line);}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;}
+.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,'Iowan Old Style',Palatino,serif;font-size:1.25rem;color:var(--forest);font-weight:560;flex-shrink:0;}
+.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap;font-size:0.92rem;font-weight:600;}
+.nav-links a{text-decoration:none;color:var(--forest-soft);padding-bottom:3px;border-bottom:1.5px solid transparent;}
+.nav-links a.active,.nav-links a:hover{color:var(--forest);border-bottom-color:var(--terracotta);}
+.nav-cta{font-size:0.88rem;font-weight:700;color:var(--cream)!important;background:var(--forest);padding:9px 18px;border-radius:24px;text-decoration:none;border-bottom:none!important;}
+.nav-cta:hover{background:var(--forest-soft);}
+
+/* page header */
+.page-head{padding:54px 0 10px;text-align:center;}
+.eyebrow{display:block;text-transform:uppercase;letter-spacing:0.14em;font-size:0.78rem;font-weight:700;color:var(--sage);margin-bottom:12px;}
+.page-head h1{font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.2;max-width:18ch;margin:0 auto 16px;}
+.page-head .lede{max-width:54ch;margin:0 auto;color:var(--forest-soft);font-size:1.04rem;}
+
+section{padding:54px 0;}
+.section-head{text-align:center;max-width:560px;margin:0 auto 36px;}
+.section-head h2{font-size:clamp(1.4rem,3.2vw,1.9rem);line-height:1.32;}
+
+/* dot motif */
+.dot-divider{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;}
+.dot-divider span{width:7px;height:7px;border-radius:50%;}
+.dot-divider .d1{background:var(--sage);}
+.dot-divider .d2{background:var(--terracotta);}
+.dot-divider .arc{width:44px;height:14px;border-top:2px solid var(--sand-line);border-radius:50%;}
+
+/* buttons / forms */
+.btn{font-family:inherit;font-weight:700;font-size:0.96rem;padding:13px 26px;border-radius:30px;border:none;background:var(--forest);color:var(--cream);cursor:pointer;transition:transform .15s ease,background .2s ease;text-decoration:none;display:inline-block;}
+.btn:hover{background:var(--forest-soft);}
+.btn:focus-visible{outline:2px solid var(--terracotta);outline-offset:3px;}
+.btn:active{transform:scale(0.98);}
+.waitlist{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;justify-content:center;}
+.waitlist input{font-family:inherit;font-size:0.96rem;padding:13px 18px;border-radius:30px;border:1.5px solid var(--sand-line);background:#fff;min-width:240px;outline-offset:3px;}
+.waitlist input:focus-visible{outline:2px solid var(--forest);}
+.form-note{font-size:0.84rem;color:var(--sage);min-height:1.2em;text-align:center;}
+
+/* reusable cards */
+.steps{display:grid;gap:22px;grid-template-columns:repeat(2,1fr);}
+.step{background:#fff;border:1px solid var(--sand-line);border-radius:22px;padding:26px 24px;}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--sage);color:#fff;font-family:Georgia,'Iowan Old Style',Palatino,serif;font-weight:600;font-size:0.95rem;margin-bottom:16px;}
+.step h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink);}
+.step p{font-size:0.93rem;color:#5C5648;margin:0;}
+
+.free-list{list-style:none;margin:0;padding:0;display:grid;gap:16px;}
+.free-list li{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--sand-line);border-radius:16px;padding:16px 18px;font-size:0.94rem;}
+.free-list li .tag{flex-shrink:0;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--terracotta);padding-top:2px;}
+
+.meaning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center;}
+.meaning-grid .card{background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:26px 18px;}
+.meaning-grid .icon{width:46px;height:46px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.meaning-grid h3{font-size:1rem;margin-bottom:6px;}
+.meaning-grid p{font-size:0.88rem;color:#5C5648;margin:0;}
+
+.pull-quote{font-family:Georgia,'Iowan Old Style',Palatino,serif;font-style:italic;font-size:clamp(1.3rem,3.4vw,1.8rem);color:var(--forest);text-align:center;max-width:24ch;margin:0 auto;line-height:1.4;}
+
+.faq-list{display:grid;gap:12px;max-width:720px;margin:0 auto;}
+.faq-list details{background:#fff;border:1px solid var(--sand-line);border-radius:16px;padding:18px 22px;}
+.faq-list summary{font-weight:700;cursor:pointer;font-size:0.98rem;color:var(--forest);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:"+";font-size:1.3rem;color:var(--terracotta);flex-shrink:0;font-weight:400;}
+.faq-list details[open] summary::after{content:"–";}
+.faq-list p{font-size:0.93rem;color:#5C5648;margin:12px 0 0;}
+
+.cta-banner{background:var(--forest);color:var(--cream);border-radius:32px;padding:46px 32px;text-align:center;margin-top:10px;}
+.cta-banner h2{color:var(--cream);font-size:clamp(1.3rem,3vw,1.7rem);margin-bottom:10px;}
+.cta-banner p{color:#E4E8DE;font-size:0.96rem;max-width:42ch;margin:0 auto 22px;}
+.cta-banner .btn{background:var(--terracotta);}
+.cta-banner .btn:hover{background:var(--terracotta-soft);}
+
+.intro-block{max-width:700px;margin:0 auto;}
+.intro-block p{font-size:1.02rem;color:#4A4438;margin-bottom:18px;}
+
+footer{padding:40px 0 50px;border-top:1px solid var(--sand-line);margin-top:20px;}
+footer .wrap{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;}
+footer .brand{font-size:1.05rem;}
+footer .baseline{font-size:0.85rem;color:var(--sage);}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:0.85rem;margin-top:6px;}
+.footer-links a{text-decoration:none;color:var(--forest-soft);}
+.footer-links a:hover{color:var(--forest);}
+footer .disclaimer{font-size:0.78rem;color:#A89E8B;max-width:40ch;margin-top:10px;}
+
+@media (max-width:760px){
+  .steps{grid-template-columns:1fr;}
+  .meaning-grid{grid-template-columns:1fr;}
+  .nav-links{gap:14px;font-size:0.86rem;}
+}
+</style>
+<style>
+.page{ display:none; }
+#page-accueil{ display:block; }
+.page:target{ display:block; }
+:target ~ #page-accueil{ display:none; }
+</style>
+<style>
+:root{
+  --ink:#233323; --forest:#3C5A38; --forest-soft:#4F6D49; --sage:#93A788;
+  --terracotta:#D98555; --terracotta-soft:#E6A87C; --cream:#F8F2E7;
+  --sand:#EFE6D3; --sand-line:#DDD0B4;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--cream);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);min-height:100vh;padding:20px 16px 48px;}
+h1,h2,h3{font-family:Georgia,serif;color:var(--forest);}
+
+.topbar{display:flex;align-items:center;gap:8px;margin-bottom:28px;}
+.topbar img{height:24px;width:auto;}
+.topbar span{font-family:Georgia,serif;font-size:1.1rem;color:var(--forest);font-weight:600;}
+
+.page-head{text-align:center;margin-bottom:28px;}
+.eyebrow{display:block;text-transform:uppercase;letter-spacing:0.12em;font-size:0.72rem;font-weight:700;color:var(--sage);margin-bottom:10px;}
+.page-head h1{font-size:1.7rem;line-height:1.2;margin-bottom:10px;}
+.page-head p{font-size:0.96rem;color:var(--forest-soft);max-width:44ch;margin:0 auto;}
+
+/* Formulaire */
+.form-card{background:#fff;border:1px solid var(--sand-line);border-radius:22px;padding:22px;margin-bottom:24px;}
+.form-card h2{font-size:1.1rem;margin-bottom:16px;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-size:0.82rem;font-weight:700;color:var(--forest);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.08em;}
+.field input, .field textarea, .field select{
+  width:100%;font-family:inherit;font-size:0.95rem;
+  padding:11px 14px;border-radius:14px;
+  border:1.5px solid var(--sand-line);background:var(--sand);
+  color:var(--ink);outline-offset:3px;resize:none;
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--forest);background:#fff;}
+.field textarea{min-height:90px;}
+.submit-btn{
+  width:100%;padding:14px;border-radius:16px;border:none;
+  background:var(--forest);color:var(--cream);
+  font-family:inherit;font-size:1rem;font-weight:700;cursor:pointer;
+  transition:background .2s;margin-top:4px;
+}
+.submit-btn:hover{background:var(--forest-soft);}
+.submit-btn:active{transform:scale(0.98);}
+.success-msg{display:none;text-align:center;padding:16px;background:rgba(147,167,136,0.15);border-radius:14px;color:var(--forest);font-size:0.94rem;margin-top:12px;}
+
+/* Catégories */
+.cats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
+.cat-btn{
+  padding:7px 16px;border-radius:20px;border:1.5px solid var(--sand-line);
+  background:#fff;font-family:inherit;font-size:0.85rem;font-weight:600;
+  color:var(--forest-soft);cursor:pointer;transition:all .2s;
+}
+.cat-btn.active{background:var(--forest);color:var(--cream);border-color:var(--forest);}
+
+/* Liste des suggestions */
+.suggestions-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.suggestions-head h2{font-size:1.1rem;}
+.count-badge{background:var(--sand);border-radius:20px;padding:4px 12px;font-size:0.8rem;font-weight:700;color:var(--forest);}
+
+.suggestion-card{
+  background:#fff;border:1px solid var(--sand-line);border-radius:18px;
+  padding:18px;margin-bottom:12px;transition:box-shadow .2s;
+}
+.suggestion-card:hover{box-shadow:0 2px 12px rgba(60,90,56,0.08);}
+.s-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px;}
+.s-title{font-family:Georgia,serif;font-size:1rem;color:var(--ink);font-weight:600;flex:1;}
+.s-cat{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--terracotta);background:rgba(217,133,85,0.1);padding:3px 10px;border-radius:10px;flex-shrink:0;}
+.s-body{font-size:0.88rem;color:#5C5648;line-height:1.55;margin-bottom:12px;}
+.s-footer{display:flex;align-items:center;justify-content:space-between;}
+.s-date{font-size:0.78rem;color:var(--sage);}
+.support-btn{
+  display:flex;align-items:center;gap:6px;
+  padding:7px 14px;border-radius:20px;border:1.5px solid var(--sand-line);
+  background:var(--sand);font-family:inherit;font-size:0.85rem;
+  font-weight:700;color:var(--forest);cursor:pointer;transition:all .2s;
+}
+.support-btn.supported{background:rgba(147,167,136,0.2);border-color:var(--sage);color:var(--forest);}
+.support-btn:hover{border-color:var(--sage);}
+.support-count{font-size:0.9rem;}
+
+/* Popular badge */
+.popular{display:inline-flex;align-items:center;gap:4px;font-size:0.72rem;font-weight:700;color:var(--terracotta);margin-bottom:6px;}
+
+/* Empty state */
+.empty{text-align:center;padding:32px 16px;color:var(--sage);font-size:0.92rem;}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#page-accueil" style="text-decoration:none;">
+      <img src="data:image/webp;base64,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" alt="" style="height:28px;width:auto;display:block;">
+      Neïa
+    </a>
+    <div class="nav-links">
+      <a href="#page-accueil" data-page="accueil">Accueil</a>
+      <a href="#page-notre-histoire" data-page="notre-histoire">Notre histoire</a>
+      <a href="#page-comment-ca-marche" data-page="comment-ca-marche">Comment ça marche</a>
+      <a href="#page-confiance-securite" data-page="confiance-securite">Confiance & sécurité</a>
+      <a href="#page-faq" data-page="faq">FAQ</a>
+      <a href="#page-suggestions" data-page="suggestions">Suggestions</a>
+      <a href="#page-premium" data-page="premium">Premium</a>
+      
+    </div>
+    <a class="nav-cta" href="#page-nous-rejoindre">Nous rejoindre</a>
+  </div>
+</nav>
+<div class="page" id="page-notre-histoire">
+
+<div class="page-head">
+  <span class="eyebrow">Notre histoire</span>
+  <h1>Neïa est née d'une question simple</h1>
+  <p class="lede">Et si se rencontrer ne demandait pas de courir ?</p>
+</div>
+
+<section>
+  <div class="wrap intro-block">
+    <p>La plupart des applications de rencontre sont construites pour aller vite : juger un profil en une seconde, répondre dans la minute, ne jamais laisser un silence s'installer. Pour beaucoup de gens, et particulièrement pour les personnes hypersensibles, à haut potentiel ou neurodivergentes, ce rythme est épuisant avant même d'avoir commencé.</p>
+    <p>Neïa part d'une autre idée : et si une rencontre pouvait se faire sans urgence ? Sans score, sans compteur, sans pression à plaire en trois photos. Un espace pensé en priorité pour les profils atypiques, mais ouvert à toute personne fatiguée de courir après une connexion.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="pull-quote">"Un endroit où l'on respire avant de se rencontrer."</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Le nom</span>
+      <h2>Pourquoi "Neïa"</h2>
+    </div>
+    <div class="intro-block" style="text-align:center;">
+      <p>Plutôt qu'un nom-concept ou un mot-valise, Neïa est un prénom — doux, simple, sans connotation imposée. L'idée : que Neïa ne soit pas perçue comme un outil ou un algorithme, mais presque comme une présence bienveillante qui accompagne, à la manière d'une amie qui te présente les bonnes personnes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Le logo</span>
+      <h2>Ce que symbolise notre identité</h2>
+    </div>
+    <div class="meaning-grid">
+      <div class="card">
+        <div class="icon">
+          <svg width="26" height="18" viewBox="0 0 34 20" fill="none"><circle cx="6" cy="5" r="3.4" fill="var(--sage)"/><circle cx="28" cy="5" r="3.4" fill="var(--terracotta)"/></svg>
+        </div>
+        <h3>Deux personnes</h3>
+        <p>Qui se rencontrent, chacune avec sa couleur, sans se fondre l'une dans l'autre.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="26" height="14" viewBox="0 0 34 20" fill="none"><path d="M2 17C2 17 9 7 17 11C25 7 32 17 32 17" stroke="var(--forest)" stroke-width="2.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Un pont, un lien</h3>
+        <p>La connexion entre deux personnes, jamais une fusion forcée.</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg width="20" height="10" viewBox="0 0 24 10" fill="none"><circle cx="6" cy="5" r="3" fill="var(--sage)"/><circle cx="18" cy="5" r="3" fill="var(--terracotta)"/></svg>
+        </div>
+        <h3>Le tréma</h3>
+        <p>Les deux points sur le "ï" : l'identité de Neïa, jusque dans son écriture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Ce qu'on construit</span>
+      <h2>Nos engagements, dès le premier jour</h2>
+    </div>
+    <ul class="free-list">
+      <li><span class="tag">Toujours</span> Aucune pression de temps, ni pour répondre ni pour swiper</li>
+      <li><span class="tag">Toujours</span> Une vérification humaine, pas automatisée</li>
+      <li><span class="tag">Toujours</span> Une sécurité de base gratuite pour tout le monde</li>
+      <li><span class="tag">Toujours</span> Un vocabulaire qui ne réduit personne à un score</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>Voir comment ça se passe concrètement</h2>
+      <p>De l'inscription à la première rencontre, étape par étape.</p>
+      <a class="btn" href="#page-comment-ca-marche">Découvrir le parcours</a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="page-comment-ca-marche">
+
+<div class="page-head">
+  <span class="eyebrow">Le parcours</span>
+  <h1>Comment ça marche</h1>
+  <p class="lede">Du premier pas à la première rencontre, sans jamais brusquer le rythme.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h3>Inscription</h3>
+        <p>Quelques infos essentielles seulement — prénom, âge, email ou téléphone. Le reste du profil se construit ensuite, sans tout exiger d'un coup.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h3>Vérification humaine</h3>
+        <p>Chaque profil est vérifié à la main par une vraie personne, pas par un robot. Ça prend un peu de temps — c'est voulu, et c'est gratuit pour tout le monde.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h3>Un profil qui te ressemble</h3>
+        <p>Des questions ouvertes plutôt que des cases à cocher froides — pour se présenter sans se sentir réduit·e à une catégorie.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h3>Découverte à ton rythme</h3>
+        <p>Pas de compteur, pas d'urgence. Tu peux revenir sur un profil déjà vu — rien n'est irréversible en une fraction de seconde.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">05</span>
+        <h3>Une mise en relation, pas un match</h3>
+        <p>Un vocabulaire plus doux pour dire qu'on s'est trouvés — sans la gamification habituelle.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">06</span>
+        <h3>Premier échange accompagné</h3>
+        <p>Une petite suggestion non-intrusive pour démarrer la conversation, utile face à la page blanche — jamais un script imposé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="background:var(--forest);border-radius:32px;padding:46px 34px;display:grid;gap:14px;text-align:center;">
+    <span class="eyebrow" style="color:var(--terracotta-soft);">Au-delà du tête-à-tête</span>
+    <h2 style="color:var(--cream);">Proposer un moment</h2>
+    <p style="color:#E4E8DE;max-width:50ch;margin:0 auto;">Un onglet pour organiser une balade, un café ou un atelier à plusieurs — comme en famille, sans la pression d'un rendez-vous en tête-à-tête. Idéal pour observer avant de s'engager, à son propre rythme.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:6px;">
+      <span style="border:1px solid rgba(248,242,231,0.35);color:var(--cream);border-radius:20px;padding:7px 16px;font-size:0.85rem;">Balade</span>
+      <span style="border:1px solid rgba(248,242,231,0.35);color:var(--cream);border-radius:20px;padding:7px 16px;font-size:0.85rem;">Café</span>
+      <span style="border:1px solid rgba(248,242,231,0.35);color:var(--cream);border-radius:20px;padding:7px 16px;font-size:0.85rem;">Atelier</span>
+      <span style="border:1px solid rgba(248,242,231,0.35);color:var(--cream);border-radius:20px;padding:7px 16px;font-size:0.85rem;">Jeux de société</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>Comment on protège chaque profil</h2>
+      <p>Vérification, signalement, données — tout ce qui reste gratuit, toujours.</p>
+      <a class="btn" href="#page-confiance-securite">Voir la sécurité</a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="page-confiance-securite">
+
+<div class="page-head">
+  <span class="eyebrow">Confiance & sécurité</span>
+  <h1>La sécurité ne se monnaie pas</h1>
+  <p class="lede">Se protéger sur Neïa n'est jamais une option payante.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Vérification</span>
+      <h2>Comment on vérifie chaque profil</h2>
+    </div>
+    <div class="intro-block" style="text-align:center;">
+      <p>À l'inscription, chaque personne soumet une pièce d'identité, examinée à la main par une vraie personne — jamais uniquement par un algorithme. Un selfie daté est également demandé : une photo tenant une feuille avec "Neïa" et la date du jour, pour confirmer que le profil est bien réel et actif. Ce contrôle prend un peu de temps, généralement de quelques heures à quelques jours, mais c'est ce délai qui garantit que les profils sont réels.</p>
+      <p style="margin-top:12px;font-size:0.9rem;color:var(--sage);font-style:italic;">À venir : intégration de FranceConnect pour une vérification encore plus simple, sans transmettre ta pièce d'identité physique.</p>
+      <p>Le standard de vérification est identique pour tout le monde. Une éventuelle option de vérification accélérée à l'avenir changerait seulement l'ordre de passage dans la file — jamais le niveau de contrôle appliqué.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Toujours inclus</span>
+      <h2>Ce qui reste gratuit, pour tout le monde</h2>
+    </div>
+    <ul class="free-list">
+      <li><span class="tag">Gratuit</span> Vérification d'identité de chaque profil</li>
+      <li><span class="tag">Gratuit</span> Signalement et blocage en un geste</li>
+      <li><span class="tag">Gratuit</span> Suppression de compte, à tout moment</li>
+      <li><span class="tag">Gratuit</span> Les moments proposés sont sous la responsabilité de leurs organisateurs — un système de signalement est disponible</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Vos données</span>
+      <h2>Notre engagement</h2>
+    </div>
+    <div class="intro-block" style="text-align:center;">
+      <p>Tes données ne sont jamais revendues à des tiers, et tu peux demander la suppression complète de ton compte à tout moment. Une politique de confidentialité détaillée et nos conditions d'utilisation seront publiées avant l'ouverture du service, conformément au RGPD.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Un problème ?</span>
+      <h2>Comment signaler</h2>
+    </div>
+    <div class="intro-block" style="text-align:center;">
+      <p>Chaque profil et chaque moment proposé dispose d'un bouton de signalement, examiné par une vraie personne dans les meilleurs délais. Aucune de ces fonctions de protection ne sera jamais réservée aux comptes payants.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>D'autres questions ?</h2>
+      <p>On a rassemblé les questions les plus fréquentes.</p>
+      <a class="btn" href="#page-faq">Consulter la FAQ</a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="page-faq">
+
+<div class="page-head">
+  <span class="eyebrow">FAQ</span>
+  <h1>Vos questions, sans détour</h1>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="faq-list">
+      <details>
+        <summary>Neïa est-elle réservée aux personnes atypiques ?</summary>
+        <p>Non. Neïa est ouverte à toutes et tous, mais pensée en priorité pour les personnes hypersensibles, à haut potentiel ou neurodivergentes — et plus largement pour quiconque est fatigué du rythme imposé par les apps classiques.</p>
+      </details>
+      <details>
+        <summary>Comment fonctionne la vérification de profil ?</summary>
+        <p>À l'inscription, chaque profil est vérifié à la main par une vraie personne, à partir d'une pièce d'identité et d'un selfie daté. Ce contrôle est gratuit pour tout le monde et prend généralement de quelques heures à quelques jours. À terme, Neïa prévoit d'intégrer FranceConnect pour une vérification encore plus simple et sécurisée.</p>
+      </details>
+      <details>
+        <summary>Qu'est-ce que FranceConnect et pourquoi Neïa va l'intégrer ?</summary>
+        <p>FranceConnect est le bouton officiel de l'État français qui permet de vérifier son identité en ligne via son compte impots.gouv.fr, Ameli ou La Poste — sans jamais transmettre sa pièce d'identité physique. En l'intégrant, Neïa pourra proposer une identité vérifiée par l'État français, sans stocker de documents sensibles. C'est plus simple, plus sécurisé, et plus respectueux de ta vie privée. Cette fonctionnalité est prévue pour une prochaine version de l'application.</p>
+      </details>
+      <details>
+        <summary>Est-ce que Neïa sera payant ?</summary>
+        <p>Le cœur de l'expérience — profil, vérification, découverte, messagerie, sécurité — restera accessible à tout le monde. Un abonnement optionnel pourra offrir plus de confort (visibilité, filtres avancés). Les détails seront précisés au lancement.</p>
+      </details>
+      <details>
+        <summary>La sécurité de base est-elle payante ?</summary>
+        <p>Non, jamais. Vérification d'identité, signalement, blocage et modération restent gratuits pour tout le monde, sans exception.</p>
+      </details>
+      <details>
+        <summary>C'est quoi "Proposer un moment" ?</summary>
+        <p>Un onglet qui permet à n'importe quel profil vérifié d'organiser une activité de groupe — balade, café, atelier — pour se rencontrer à plusieurs, dans un cadre moins intimidant qu'un rendez-vous en tête-à-tête.</p>
+      </details>
+      <details>
+        <summary>Mes données sont-elles protégées ?</summary>
+        <p>Elles ne sont jamais revendues, et tu peux demander leur suppression à tout moment. Plus de détails sur notre page Confiance &amp; sécurité.</p>
+      </details>
+      <details>
+        <summary>Quand Neïa sera-t-elle disponible ?</summary>
+        <p>Pas encore de date précise. Une application est en préparation — Neïa prend le temps de bien faire les choses. Rejoins la liste d'attente pour être informé·e en priorité dès l'ouverture des inscriptions.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>Toujours une question ?</h2>
+      <p>Rejoins la liste d'attente, on prendra le temps de te répondre.</p>
+      <a class="btn" href="#page-nous-rejoindre">Nous rejoindre</a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="page-suggestions">
+
+
+<div class="page-head">
+  <span class="eyebrow">Communauté</span>
+  <h1>Vos idées pour Neïa</h1>
+  <p>Tu as une idée pour améliorer Neïa ? Propose-la ici, et soutiens celles qui te parlent 🌿</p>
+</div>
+
+<!-- Formulaire -->
+<div class="form-card">
+  <h2>💡 Proposer une idée</h2>
+  <form id="suggForm">
+    <div class="field">
+      <label>Titre de ton idée</label>
+      <input type="text" id="suggTitle" placeholder="Ex: Pouvoir envoyer des GIFs..." required maxlength="80">
+    </div>
+    <div class="field">
+      <label>Catégorie</label>
+      <select id="suggCat">
+        <option value="Profil">Profil</option>
+        <option value="Messagerie">Messagerie</option>
+        <option value="Sécurité">Sécurité</option>
+        <option value="Moments">Moments</option>
+        <option value="Design">Design</option>
+        <option value="Autre">Autre</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Décris ton idée</label>
+      <textarea id="suggBody" placeholder="Explique en quelques mots ce que tu imagines..." required maxlength="300"></textarea>
+    </div>
+    <button class="submit-btn" type="submit">✨ Proposer cette idée</button>
+    <div class="success-msg" id="successMsg">Merci ! Ton idée a été ajoutée 🌿</div>
+  </form>
+</div>
+
+<!-- Filtres catégories -->
+<div class="cats" id="catFilters">
+  <button class="cat-btn active" data-cat="Tout">Tout</button>
+  <button class="cat-btn" data-cat="Profil">Profil</button>
+  <button class="cat-btn" data-cat="Messagerie">Messagerie</button>
+  <button class="cat-btn" data-cat="Sécurité">Sécurité</button>
+  <button class="cat-btn" data-cat="Moments">Moments</button>
+  <button class="cat-btn" data-cat="Design">Design</button>
+  <button class="cat-btn" data-cat="Autre">Autre</button>
+</div>
+
+<!-- Liste -->
+<div class="suggestions-head">
+  <h2>Les idées de la communauté</h2>
+  <span class="count-badge" id="countBadge">0 idée</span>
+</div>
+
+<div id="suggList"></div>
+
+<script>
+// Données initiales (exemples pour illustrer)
+let suggestions = [
+  {id:1, title:"Pouvoir mettre sa musique favorite sur son profil", cat:"Profil", body:"Ce serait sympa de partager ses goûts musicaux directement sur la fiche, pour créer des connexions autour de la musique.", supports:12, supported:false, date:"Aujourd'hui"},
+  {id:2, title:"Un mode 'pause' pour se déconnecter sans supprimer son compte", cat:"Profil", body:"Parfois on a besoin de souffler sans pour autant vouloir tout recommencer. Un bouton pause serait parfait pour les profils atypiques.", supports:28, supported:false, date:"Hier"},
+  {id:3, title:"Des moments en visio avant de se voir en vrai", cat:"Moments", body:"Pour les personnes qui ont du mal à se rencontrer directement, proposer des moments vidéo serait un intermédiaire rassurant.", supports:19, supported:false, date:"Il y a 2 jours"},
+];
+let nextId = 4;
+let activeFilter = "Tout";
+let supported = new Set();
+
+function render() {
+  const list = document.getElementById('suggList');
+  const filtered = activeFilter === "Tout" ? suggestions : suggestions.filter(s => s.cat === activeFilter);
+  const sorted = [...filtered].sort((a,b) => b.supports - a.supports);
+  
+  const badge = document.getElementById('countBadge');
+  badge.textContent = filtered.length + (filtered.length > 1 ? " idées" : " idée");
+  
+  if(sorted.length === 0) {
+    list.innerHTML = '<div class="empty">Aucune idée dans cette catégorie pour l\u2019instant.<br>Sois le premier à en proposer une\u00a0! 🌿</div>';
+    return;
+  }
+  
+  list.innerHTML = sorted.map(s => {
+    const isPopular = s.supports >= 15;
+    const isSupported = supported.has(s.id);
+    return `<div class="suggestion-card">
+      ${isPopular ? '<div class="popular">✨ Idée populaire</div>' : ''}
+      <div class="s-header">
+        <div class="s-title">${s.title}</div>
+        <span class="s-cat">${s.cat}</span>
+      </div>
+      <div class="s-body">${s.body}</div>
+      <div class="s-footer">
+        <span class="s-date">${s.date}</span>
+        <button class="support-btn ${isSupported ? 'supported' : ''}" onclick="toggleSupport(${s.id})">
+          ${isSupported ? '🌿' : '🌱'} <span class="support-count">${s.supports}</span> ${isSupported ? 'Tu soutiens' : 'Je soutiens'}
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleSupport(id) {
+  const s = suggestions.find(x => x.id === id);
+  if(!s) return;
+  if(supported.has(id)) {
+    supported.delete(id);
+    s.supports--;
+  } else {
+    supported.add(id);
+    s.supports++;
+  }
+  render();
+}
+
+// Filtres
+document.getElementById('catFilters').addEventListener('click', function(e) {
+  if(e.target.classList.contains('cat-btn')) {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    activeFilter = e.target.getAttribute('data-cat');
+    render();
+  }
+});
+
+// Formulaire
+document.getElementById('suggForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const title = document.getElementById('suggTitle').value.trim();
+  const cat = document.getElementById('suggCat').value;
+  const body = document.getElementById('suggBody').value.trim();
+  if(!title || !body) return;
+  
+  suggestions.unshift({
+    id: nextId++,
+    title, cat, body,
+    supports: 0,
+    date: "À l'instant"
+  });
+  
+  this.reset();
+  const msg = document.getElementById('successMsg');
+  msg.style.display = 'block';
+  setTimeout(() => msg.style.display = 'none', 3000);
+  
+  // Si le filtre actif ne correspond pas à la nouvelle cat, repasser sur Tout
+  if(activeFilter !== "Tout" && activeFilter !== cat) {
+    activeFilter = "Tout";
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-cat="Tout"]').classList.add('active');
+  }
+  render();
+});
+
+render();
+</script>
+
+</div>
+<div class="page" id="page-nous-rejoindre">
+
+<div class="page-head">
+  <span class="eyebrow">Nous rejoindre</span>
+  <h1>Prends de l'avance, sans courir</h1>
+  <p class="lede">Sois prévenu·e dès l'ouverture des inscriptions. Pas de spam, juste un mot quand ce sera prêt.</p>
+</div>
+
+<section style="padding-top:10px;">
+  <div class="wrap" style="text-align:center;">
+    <form class="waitlist" id="waitlistForm-nous-rejoindre">
+      <input type="email" id="email-nous-rejoindre" placeholder="Ton email" required>
+      <button class="btn" type="submit">Rejoindre la liste d'attente</button>
+    </form>
+    <p class="form-note" id="formNote-nous-rejoindre"></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="free-list">
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--sand-line);border-radius:16px;padding:16px 18px;font-size:0.94rem;"><span style="flex-shrink:0;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--terracotta);padding-top:2px;">Promis</span> Aucun spam, juste un message quand l'inscription ouvre</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--sand-line);border-radius:16px;padding:16px 18px;font-size:0.94rem;"><span style="flex-shrink:0;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--terracotta);padding-top:2px;">Promis</span> Tu es informé·e en priorité, avant l'ouverture publique</div>
+      <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--sand-line);border-radius:16px;padding:16px 18px;font-size:0.94rem;"><span style="flex-shrink:0;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--terracotta);padding-top:2px;">Promis</span> Désinscription en un clic, à tout moment</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center;">
+    <p style="color:var(--forest-soft);font-size:0.92rem;">Une adresse de contact dédiée sera communiquée au lancement.</p>
+  </div>
+</section>
+
+</div>
+<div class="page" id="page-accueil">
+
+<header class="hero" style="padding:50px 0 70px;text-align:center;">
+  <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:24px;">
+    <img src="data:image/webp;base64,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" alt="Neïa — Rencontrez autrement" style="width:260px;height:auto;animation:breathe 7s ease-in-out infinite;">
+    <span class="eyebrow" style="margin:0;">Bientôt disponible</span>
+    <h1 style="font-size:clamp(2rem,5.2vw,3.2rem);line-height:1.18;max-width:14ch;">Ici, on respire <em style="font-style:italic;color:var(--terracotta);">avant</em> de se rencontrer.</h1>
+    <p style="max-width:46ch;font-size:1.05rem;color:var(--forest-soft);">Neïa est un espace de rencontre pensé pour celles et ceux qui ont besoin de temps, pas de pression. Profils vérifiés à la main, échanges sans urgence, rencontres à ton rythme.</p>
+    <p style="max-width:42ch;font-size:0.88rem;color:var(--sage);font-style:italic;">Vérification d'identité humaine dès le lancement — intégration FranceConnect prévue 🌿</p>
+    <form class="waitlist" id="waitlistForm-accueil">
+      <input type="email" id="email-accueil" placeholder="Ton email" required>
+      <button class="btn" type="submit">Rejoindre la liste d'attente</button>
+    </form>
+    <p class="form-note" id="formNote-accueil"></p>
+  </div>
+</header>
+<style>@keyframes breathe{0%,100%{transform:scale(1);}50%{transform:scale(1.045);}}</style>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">La différence</span>
+      <h2>Le même mot peut vouloir dire deux choses</h2>
+    </div>
+    <div style="background:var(--sand);border-radius:28px;padding:34px 28px;display:grid;gap:16px;">
+      <div style="display:grid;grid-template-columns:1fr 30px 1fr;gap:10px;align-items:center;">
+        <p style="text-align:right;color:#7A7164;font-size:0.95rem;margin:0;">On juge en une seconde, on swipe</p>
+        <div style="display:flex;justify-content:center;"><span style="font-size:1.2rem;color:var(--terracotta);display:block;">→</span></div>
+        <p style="color:var(--forest);font-weight:600;font-size:0.95rem;margin:0;">On prend le temps de lire un profil</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 30px 1fr;gap:10px;align-items:center;border-top:1px solid var(--sand-line);padding-top:16px;">
+        <p style="text-align:right;color:#7A7164;font-size:0.95rem;margin:0;">Un match qui presse à répondre vite</p>
+        <div style="display:flex;justify-content:center;"><span style="font-size:1.2rem;color:var(--terracotta);display:block;">→</span></div>
+        <p style="color:var(--forest);font-weight:600;font-size:0.95rem;margin:0;">Le silence est normal, jamais un échec</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 30px 1fr;gap:10px;align-items:center;border-top:1px solid var(--sand-line);padding-top:16px;">
+        <p style="text-align:right;color:#7A7164;font-size:0.95rem;margin:0;">Un profil à optimiser pour plaire</p>
+        <div style="display:flex;justify-content:center;"><span style="font-size:1.2rem;color:var(--terracotta);display:block;">→</span></div>
+        <p style="color:var(--forest);font-weight:600;font-size:0.95rem;margin:0;">Un profil qui te ressemble, sans case à cocher</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="background:var(--forest);border-radius:32px;padding:46px 34px;display:grid;gap:14px;text-align:center;">
+    <span class="eyebrow" style="color:var(--terracotta-soft);">Une fonctionnalité Neïa</span>
+    <h2 style="color:var(--cream);">Proposer un moment</h2>
+    <p style="color:#E4E8DE;max-width:50ch;margin:0 auto;">Un onglet pour organiser, pas seulement matcher. Proposez une balade, un café, un atelier — comme en famille, on se retrouve à plusieurs.</p>
+    <div style="margin-top:6px;"><a class="btn" style="background:var(--terracotta);" href="#page-comment-ca-marche">Voir le parcours complet</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>Prends de l'avance, sans courir</h2>
+      <p>Découvre notre histoire, notre fonctionnement, et tout ce qu'on fait pour que ça reste un endroit sûr.</p>
+      <a class="btn" href="#page-notre-histoire">Découvrir Neïa</a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <img src="data:image/webp;base64,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" alt="" style="height:24px;width:auto;display:block;">
+      Neïa
+    </div>
+    <span class="baseline">Rencontrez autrement</span>
+    <div class="footer-links">
+      <a href="#page-accueil">Accueil</a>
+      <a href="#page-notre-histoire">Notre histoire</a>
+      <a href="#page-comment-ca-marche">Comment ça marche</a>
+      <a href="#page-confiance-securite">Confiance &amp; sécurité</a>
+      <a href="#page-faq">FAQ</a>
+      <a href="#page-nous-rejoindre">Nous rejoindre</a>
+      <a href="#page-mentions-legales">Mentions légales</a>
+    </div>
+    <p class="disclaimer">Page de présentation du concept — Neïa n'est pas encore disponible au public.</p>
+  </div>
+</footer>
+
+<div class="page" id="page-inscription" style="display:none;">
+<style>
+.inscription-wrap{max-width:640px;margin:0 auto;padding:40px 28px 80px;}
+.insc-step{display:none;}
+.insc-step.active{display:block;}
+.insc-progress{display:flex;gap:8px;margin-bottom:36px;}
+.insc-progress span{flex:1;height:4px;border-radius:4px;background:var(--sand-line);transition:background .3s;}
+.insc-progress span.done{background:var(--forest);}
+.insc-progress span.current{background:var(--terracotta);}
+.insc-field{margin-bottom:20px;}
+.insc-field label{display:block;font-size:0.88rem;font-weight:700;color:var(--forest);margin-bottom:6px;letter-spacing:0.02em;}
+.insc-field input,.insc-field select{width:100%;font-family:inherit;font-size:0.97rem;padding:13px 16px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;color:var(--ink);outline-offset:3px;}
+.insc-field input:focus-visible,.insc-field select:focus-visible{outline:2px solid var(--forest);}
+.insc-field textarea{width:100%;font-family:inherit;font-size:0.97rem;padding:13px 16px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;color:var(--ink);min-height:100px;resize:vertical;outline-offset:3px;}
+.insc-field textarea:focus-visible{outline:2px solid var(--forest);}
+.checkbox-group{display:flex;flex-direction:column;gap:10px;margin-top:6px;}
+.checkbox-group label{display:flex;align-items:flex-start;gap:10px;font-size:0.94rem;font-weight:400;color:var(--ink);cursor:pointer;padding:10px 14px;border-radius:12px;border:1.5px solid var(--sand-line);background:#fff;transition:border-color .2s;}
+.checkbox-group label:hover{border-color:var(--sage);}
+.checkbox-group input[type=checkbox]{flex-shrink:0;width:18px;height:18px;accent-color:var(--forest);margin-top:1px;}
+.insc-cats{margin-bottom:24px;}
+.insc-cats h3{font-size:0.95rem;font-weight:700;color:var(--forest);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--sand-line);}
+.insc-nav{display:flex;gap:12px;margin-top:28px;justify-content:space-between;}
+.btn-outline{font-family:inherit;font-weight:700;font-size:0.96rem;padding:13px 26px;border-radius:30px;border:2px solid var(--forest);background:transparent;color:var(--forest);cursor:pointer;transition:background .2s;}
+.btn-outline:hover{background:var(--sand);}
+.signe-result{margin-top:12px;padding:16px;background:var(--sand);border-radius:14px;font-size:0.94rem;color:var(--forest);text-align:center;min-height:48px;}
+.tags-input{display:flex;flex-wrap:wrap;gap:8px;padding:10px 14px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;cursor:text;}
+.tag{background:var(--sage);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.84rem;display:flex;align-items:center;gap:6px;}
+.tag button{background:none;border:none;color:#fff;cursor:pointer;font-size:0.9rem;padding:0;line-height:1;}
+.tags-input input{border:none;outline:none;font-family:inherit;font-size:0.94rem;flex:1;min-width:120px;background:transparent;}
+</style>
+
+<div class="inscription-wrap">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Inscription</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">Crée ton espace Neïa</h1>
+    <p class="lede" style="text-align:left;">Prends le temps de te présenter comme tu es vraiment.</p>
+  </div>
+
+  <div class="insc-progress" id="inscProgress">
+    <span class="current"></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- ÉTAPE 1 : Infos de base -->
+  <div class="insc-step active" id="inscStep1">
+    <div class="insc-cats"><h3>Infos de base</h3></div>
+    <div class="insc-field">
+      <label>Prénom *</label>
+      <input type="text" id="insc-prenom" placeholder="Ton prénom" required>
+    </div>
+    <div class="insc-field">
+      <label>Email *</label>
+      <input type="email" id="insc-email" placeholder="ton@email.fr" required>
+    </div>
+    <div class="insc-field">
+      <label>Mot de passe *</label>
+      <input type="password" id="insc-mdp" placeholder="Au moins 8 caractères" required>
+    </div>
+    <div class="insc-field">
+      <label>Date de naissance *</label>
+      <input type="date" id="insc-ddn" required>
+    </div>
+    <div class="insc-nav">
+      <span></span>
+      <button class="btn" onclick="inscNext(1)">Suivant →</button>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 2 : Identité -->
+  <div class="insc-step" id="inscStep2">
+    <div class="insc-cats"><h3>Identité</h3></div>
+    <div class="insc-field">
+      <label>Genre</label>
+      <select id="insc-genre">
+        <option value="">— Choisir —</option>
+        <option>Femme</option>
+        <option>Homme</option>
+        <option>Non-binaire</option>
+        <option>Je ne souhaite pas préciser</option>
+        <option>Autre</option>
+      </select>
+    </div>
+    <div class="insc-field">
+      <label>Orientation amoureuse</label>
+      <select id="insc-orientation">
+        <option value="">— Choisir —</option>
+        <option>Hétérosexuel·le</option>
+        <option>Gay / Lesbienne</option>
+        <option>Bisexuel·le</option>
+        <option>Pansexuel·le</option>
+        <option>Asexuel·le</option>
+        <option>Je ne souhaite pas préciser</option>
+        <option>Autre</option>
+      </select>
+    </div>
+    <div class="insc-field">
+      <label>Je recherche</label>
+      <select id="insc-recherche">
+        <option value="">— Choisir —</option>
+        <option>Une femme</option>
+        <option>Un homme</option>
+        <option>Peu importe le genre</option>
+      </select>
+    </div>
+    <div class="insc-field">
+      <label>Centres d'intérêt <span style="font-weight:400;color:var(--sage);">(tape et appuie sur Entrée)</span></label>
+      <div class="tags-input" id="tagsContainer" onclick="document.getElementById('tagsField').focus()">
+        <input type="text" id="tagsField" placeholder="Ex : randonnée, lecture, cuisine...">
+      </div>
+      <input type="hidden" id="insc-interets">
+    </div>
+    <div class="insc-nav">
+      <button class="btn-outline" onclick="inscPrev(2)">← Retour</button>
+      <button class="btn" onclick="inscNext(2)">Suivant →</button>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 3 : Mon fonctionnement -->
+  <div class="insc-step" id="inscStep3">
+    <div class="insc-cats"><h3>Besoins relationnels</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="fonct" value="besoin_confiance"> J'ai besoin de beaucoup de temps avant de faire confiance</label>
+        <label><input type="checkbox" name="fonct" value="loyal"> Je suis très loyal·e une fois attaché·e</label>
+        <label><input type="checkbox" name="fonct" value="communication_claire"> J'ai besoin de communication claire et directe</label>
+        <label><input type="checkbox" name="fonct" value="mal_exprimer"> J'ai parfois du mal à exprimer ce que je ressens</label>
+        <label><input type="checkbox" name="fonct" value="besoin_rassuré"> J'ai besoin d'être rassuré·e régulièrement</label>
+      </div>
+    </div>
+    <div class="insc-cats" style="margin-top:20px;"><h3>Énergie sociale</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="fonct" value="ressource_seul"> Je me ressource seul·e</label>
+        <label><input type="checkbox" name="fonct" value="ressource_proches"> Je me ressource avec quelques proches seulement</label>
+        <label><input type="checkbox" name="fonct" value="petits_groupes"> J'aime les petits groupes</label>
+        <label><input type="checkbox" name="fonct" value="grands_rassemblements"> J'aime les grands rassemblements</label>
+      </div>
+    </div>
+    <div class="insc-cats" style="margin-top:20px;"><h3>Communication</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="fonct" value="ecrits"> Je préfère les messages écrits</label>
+        <label><input type="checkbox" name="fonct" value="appels"> Je préfère les appels</label>
+        <label><input type="checkbox" name="fonct" value="temps_repondre"> J'ai besoin de temps pour répondre</label>
+        <label><input type="checkbox" name="fonct" value="disparaitre"> Je peux disparaître un moment sans que cela signifie un désintérêt</label>
+      </div>
+    </div>
+    <div class="insc-cats" style="margin-top:20px;"><h3>Sensoriel</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="fonct" value="sensible_bruit"> Je suis sensible au bruit</label>
+        <label><input type="checkbox" name="fonct" value="sensible_lumiere"> Je suis sensible aux lumières fortes</label>
+        <label><input type="checkbox" name="fonct" value="sensible_odeurs"> Je suis sensible aux odeurs</label>
+        <label><input type="checkbox" name="fonct" value="environnement_calme"> J'ai besoin d'un environnement calme</label>
+      </div>
+    </div>
+    <div class="insc-field" style="margin-top:20px;">
+      <label>Décris ton fonctionnement avec tes propres mots <span style="font-weight:400;color:var(--sage);">(facultatif)</span></label>
+      <textarea id="insc-fonct-libre" placeholder="Ce que les cases ne peuvent pas capturer..."></textarea>
+    </div>
+    <div class="insc-nav">
+      <button class="btn-outline" onclick="inscPrev(3)">← Retour</button>
+      <button class="btn" onclick="inscNext(3)">Suivant →</button>
+    </div>
+  </div>
+
+  <!-- ÉTAPE 4 : Signe chinois -->
+  <div class="insc-step" id="inscStep4">
+    <div class="insc-cats"><h3>Ton signe astrologique chinois</h3></div>
+    <div class="signe-result" id="signeChinoisResult">Calculé automatiquement depuis ta date de naissance 🌿</div>
+    <div class="insc-field" style="margin-top:24px;">
+      <label>Quelque chose à ajouter sur toi ? <span style="font-weight:400;color:var(--sage);">(facultatif)</span></label>
+      <textarea id="insc-bio" placeholder="Une phrase, une envie, une façon d'être..."></textarea>
+    </div>
+    <div class="insc-nav">
+      <button class="btn-outline" onclick="inscPrev(4)">← Retour</button>
+      <button class="btn" onclick="inscSubmit()" style="background:var(--terracotta);">Créer mon profil 🌿</button>
+    </div>
+    <p class="form-note" id="inscNote" style="margin-top:16px;"></p>
+  </div>
+</div>
+</div>
+<script>
+  const BREVO_LIST_ID = 3;
+
+  function handleWaitlist(formId, noteId){
+    const form = document.getElementById(formId);
+    if(!form) return;
+    const note = document.getElementById(noteId);
+    const emailId = formId.replace('waitlistForm', 'email');
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      const email = document.getElementById(emailId).value;
+      note.textContent = "Inscription en cours...";
+      try {
+        const res = await fetch('/.netlify/functions/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email: email,
+            listIds: [BREVO_LIST_ID],
+            updateEnabled: true
+          })
+        });
+        if(res.ok || res.status === 204){
+          note.textContent = "Bienvenue, on t'écrit dès que c'est prêt 🌿";
+          note.style.color = "var(--forest)";
+          form.reset();
+        } else {
+          const data = await res.json();
+          if(data.code === 'duplicate_parameter'){
+            note.textContent = "Tu es déjà sur la liste 🌿";
+            note.style.color = "var(--forest)";
+            form.reset();
+          } else {
+            note.textContent = "Une erreur est survenue, réessaie.";
+            note.style.color = "red";
+          }
+        }
+      } catch(err) {
+        note.textContent = "Une erreur est survenue, réessaie.";
+        note.style.color = "red";
+      }
+    });
+  }
+  handleWaitlist('waitlistForm-accueil', 'formNote-accueil');
+  handleWaitlist('waitlistForm-nous-rejoindre', 'formNote-nous-rejoindre');
+
+  // === INSCRIPTION ===
+  let tags = [];
+
+  // Tags (centres d'intérêt)
+  const tagsField = document.getElementById('tagsField');
+  if(tagsField){
+    tagsField.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ','){
+        e.preventDefault();
+        const val = tagsField.value.trim().replace(/,$/, '');
+        if(val && !tags.includes(val)){
+          tags.push(val);
+          renderTags();
+        }
+        tagsField.value = '';
+        document.getElementById('insc-interets').value = tags.join(', ');
+      }
+    });
+  }
+
+  function renderTags(){
+    const container = document.getElementById('tagsContainer');
+    container.querySelectorAll('.tag').forEach(t => t.remove());
+    tags.forEach((t, i) => {
+      const el = document.createElement('span');
+      el.className = 'tag';
+      el.innerHTML = t + '<button onclick="removeTag(' + i + ')">×</button>';
+      container.insertBefore(el, document.getElementById('tagsField'));
+    });
+  }
+
+  function removeTag(i){
+    tags.splice(i, 1);
+    renderTags();
+    document.getElementById('insc-interets').value = tags.join(', ');
+  }
+
+  // Signe chinois
+  const signesMap = {
+    rat:['Rat 🐭','Vif, curieux, adaptable. Tu perceives ce que les autres ne voient pas.'],
+    boeuf:['Bœuf 🐂','Fiable, patient, déterminé. Tu construis dans la durée.'],
+    tigre:['Tigre 🐯','Courageux, intense, magnétique. Tu laisses une trace.'],
+    lapin:['Lapin 🐰','Doux, intuitif, diplomate. Tu crées de la paix autour de toi.'],
+    dragon:['Dragon 🐉','Charismatique, ambitieux, passionné. Tu inspires.'],
+    serpent:['Serpent 🐍','Profond, discret, perspicace. Tu penses avant d\u2019agir.'],
+    cheval:['Cheval 🐴','Libre, enthousiaste, spontané. Tu avances.'],
+    chevre:['Chèvre 🐐','Créatif, sensible, généreux. Tu ressens intensément.'],
+    singe:['Singe 🐒','Ingénieux, espiègle, polyvalent. Tu trouves toujours une solution.'],
+    coq:['Coq 🐓','Observateur, perfectionniste, sincère. Tu dis ce que tu penses.'],
+    chien:['Chien 🐕','Loyal, honnête, protecteur. Tu ne lâches pas ceux que tu aimes.'],
+    cochon:['Cochon 🐖','Généreux, sincère, bon vivant. Tu profites de la vie avec grâce.']
+  };
+
+  const cycleDebut = 1900;
+  const cycleSigBrut = ['rat','boeuf','tigre','lapin','dragon','serpent','cheval','chevre','singe','coq','chien','cochon'];
+
+  function getSigneChinois(dateStr){
+    if(!dateStr) return null;
+    const annee = parseInt(dateStr.split('-')[0]);
+    const idx = (annee - cycleDebut) % 12;
+    const key = cycleSigBrut[(idx + 12) % 12];
+    return signesMap[key];
+  }
+
+  // Progress bar
+  function updateProgress(step){
+    const spans = document.querySelectorAll('#inscProgress span');
+    spans.forEach((s, i) => {
+      s.className = i < step - 1 ? 'done' : (i === step - 1 ? 'current' : '');
+    });
+  }
+
+  function inscNext(step){
+    // Validation étape 1
+    if(step === 1){
+      const prenom = document.getElementById('insc-prenom').value.trim();
+      const email = document.getElementById('insc-email').value.trim();
+      const mdp = document.getElementById('insc-mdp').value;
+      const ddn = document.getElementById('insc-ddn').value;
+      if(!prenom || !email || !mdp || !ddn){
+        alert('Merci de remplir tous les champs obligatoires.');
+        return;
+      }
+      if(mdp.length < 8){
+        alert('Le mot de passe doit contenir au moins 8 caractères.');
+        return;
+      }
+    }
+    // Calcul signe chinois à l'étape 3 → 4
+    if(step === 3){
+      const ddn = document.getElementById('insc-ddn').value;
+      const signe = getSigneChinois(ddn);
+      const el = document.getElementById('signeChinoisResult');
+      if(signe) el.innerHTML = '<strong>' + signe[0] + '</strong><br><span style="font-size:0.9rem;color:var(--forest-soft);">' + signe[1] + '</span>';
+    }
+    document.getElementById('inscStep' + step).classList.remove('active');
+    document.getElementById('inscStep' + (step + 1)).classList.add('active');
+    updateProgress(step + 1);
+    window.scrollTo(0, 0);
+  }
+
+  function inscPrev(step){
+    document.getElementById('inscStep' + step).classList.remove('active');
+    document.getElementById('inscStep' + (step - 1)).classList.add('active');
+    updateProgress(step - 1);
+    window.scrollTo(0, 0);
+  }
+
+  function inscSubmit(){
+    const note = document.getElementById('inscNote');
+    note.textContent = 'Profil créé avec succès — on te contacte dès l\u2019ouverture 🌿';
+    note.style.color = 'var(--forest)';
+  }
+</script>
+
+<!-- PAGE CRÉATION DE PROFIL -->
+<div class="page" id="page-profil" style="display:none;">
+<style>
+.profil-wrap{max-width:640px;margin:0 auto;padding:40px 28px 80px;}
+.photo-zone{display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:28px;}
+.photo-preview{width:120px;height:120px;border-radius:50%;background:var(--sand);border:2px solid var(--sand-line);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.photo-preview img{width:100%;height:100%;object-fit:cover;}
+.photo-preview.blurred img{filter:blur(8px);}
+.photo-placeholder{font-size:2.5rem;color:var(--sage);}
+.photo-toggle{display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--forest);}
+.toggle-switch{position:relative;width:44px;height:24px;}
+.toggle-switch input{opacity:0;width:0;height:0;}
+.toggle-slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background:var(--sand-line);border-radius:24px;transition:.3s;}
+.toggle-slider:before{position:absolute;content:"";height:18px;width:18px;left:3px;bottom:3px;background:white;border-radius:50%;transition:.3s;}
+.toggle-switch input:checked + .toggle-slider{background:var(--forest);}
+.toggle-switch input:checked + .toggle-slider:before{transform:translateX(20px);}
+.profil-section{margin-bottom:28px;}
+.profil-section h3{font-size:0.95rem;font-weight:700;color:var(--forest);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--sand-line);}
+.profil-field{margin-bottom:16px;}
+.profil-field label{display:block;font-size:0.88rem;font-weight:700;color:var(--forest);margin-bottom:6px;}
+.profil-field textarea{width:100%;font-family:inherit;font-size:0.97rem;padding:13px 16px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;color:var(--ink);min-height:90px;resize:vertical;outline-offset:3px;}
+.profil-field textarea:focus-visible{outline:2px solid var(--forest);}
+.profil-field input[type=range]{width:100%;accent-color:var(--forest);}
+.rythme-labels{display:flex;justify-content:space-between;font-size:0.8rem;color:var(--sage);margin-top:4px;}
+</style>
+
+<div class="profil-wrap">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Mon profil</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">Présente-toi comme tu es</h1>
+    <p class="lede" style="text-align:left;">Pas de mise en scène. Juste toi.</p>
+  </div>
+
+  <!-- PHOTO -->
+  <div class="profil-section">
+    <h3>Ma photo</h3>
+    <div class="photo-zone">
+      <div class="photo-preview blurred" id="photoPreview">
+        <div class="photo-placeholder" id="photoPlaceholder">🌿</div>
+        <img id="photoImg" src="" alt="" style="display:none;">
+      </div>
+      <label style="cursor:pointer;font-size:0.9rem;color:var(--forest);text-decoration:underline;">
+        Choisir une photo
+        <input type="file" accept="image/*" style="display:none;" onchange="handlePhoto(this)">
+      </label>
+      <div class="photo-toggle">
+        <label class="toggle-switch">
+          <input type="checkbox" id="photoVisible" onchange="togglePhotoVisibility()">
+          <span class="toggle-slider"></span>
+        </label>
+        <span id="photoToggleLabel">Photo cachée (floutée pour les autres)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIO -->
+  <div class="profil-section">
+    <h3>Les incontournables</h3>
+    <div class="profil-field">
+      <label>Bio / description</label>
+      <textarea id="profil-bio" placeholder="Qui tu es, ce qui compte pour toi, ce qui te fait sourire..."></textarea>
+    </div>
+    <div class="profil-field">
+      <label>Ce que je cherche</label>
+      <textarea id="profil-cherche" placeholder="Une relation sérieuse, des échanges profonds, quelqu'un qui prend le temps..."></textarea>
+    </div>
+  </div>
+
+  <!-- CE QUI FAIT LA DIFFÉRENCE -->
+  <div class="profil-section">
+    <h3>Ce qui fait la différence</h3>
+    <div class="profil-field">
+      <label>Ce que j'apporte dans une relation</label>
+      <textarea id="profil-apporte" placeholder="Ma loyauté, mon écoute, mon humour, ma présence..."></textarea>
+    </div>
+    <div class="profil-field">
+      <label>Ce dont j'ai besoin</label>
+      <textarea id="profil-besoin" placeholder="Du temps, de la clarté, de la douceur, de l'espace..."></textarea>
+    </div>
+    <div class="profil-field">
+      <label>Mon rythme de vie</label>
+      <input type="range" id="profil-rythme" min="1" max="5" value="3" oninput="updateRythme(this.value)">
+      <div class="rythme-labels">
+        <span>Très posé·e</span>
+        <span id="rythmeVal">Équilibré·e</span>
+        <span>Très actif·ve</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:20px;">
+    <button class="btn" onclick="profilSubmit()" style="background:var(--terracotta);min-width:220px;">Enregistrer mon profil 🌿</button>
+    <p class="form-note" id="profilNote" style="margin-top:14px;"></p>
+  </div>
+</div>
+</div>
+
+<script>
+  function handlePhoto(input){
+    const file = input.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e){
+      const img = document.getElementById('photoImg');
+      img.src = e.target.result;
+      img.style.display = 'block';
+      document.getElementById('photoPlaceholder').style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function togglePhotoVisibility(){
+    const visible = document.getElementById('photoVisible').checked;
+    const preview = document.getElementById('photoPreview');
+    const label = document.getElementById('photoToggleLabel');
+    if(visible){
+      preview.classList.remove('blurred');
+      label.textContent = 'Photo visible';
+    } else {
+      preview.classList.add('blurred');
+      label.textContent = 'Photo cachée (floutée pour les autres)';
+    }
+  }
+
+  const rythmeLabels = ['','Très posé·e','Plutôt calme','Équilibré·e','Plutôt actif·ve','Très actif·ve'];
+  function updateRythme(val){
+    document.getElementById('rythmeVal').textContent = rythmeLabels[val];
+  }
+
+  function profilSubmit(){
+    const note = document.getElementById('profilNote');
+    note.textContent = 'Profil enregistré 🌿';
+    note.style.color = 'var(--forest)';
+  }
+</script>
+
+<!-- PAGE VÉRIFICATION D'IDENTITÉ -->
+<div class="page" id="page-verification" style="display:none;">
+<style>
+.verif-wrap{max-width:600px;margin:0 auto;padding:40px 28px 80px;}
+.verif-info{background:var(--sand);border-radius:16px;padding:18px 20px;margin-bottom:28px;font-size:0.94rem;color:var(--forest);}
+.verif-info strong{display:block;margin-bottom:6px;font-size:1rem;}
+.verif-upload{border:2px dashed var(--sand-line);border-radius:16px;padding:28px;text-align:center;background:#fff;cursor:pointer;transition:border-color .2s;margin-bottom:6px;}
+.verif-upload:hover{border-color:var(--sage);}
+.verif-upload.has-file{border-color:var(--forest);background:var(--sand);}
+.verif-upload-icon{font-size:2rem;margin-bottom:8px;}
+.verif-upload p{margin:0;font-size:0.9rem;color:var(--sage);}
+.verif-upload .filename{font-size:0.88rem;color:var(--forest);margin-top:6px;font-weight:600;}
+.verif-section{margin-bottom:28px;}
+.verif-section h3{font-size:0.95rem;font-weight:700;color:var(--forest);margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--sand-line);}
+.verif-section p{font-size:0.88rem;color:var(--sage);margin:0 0 12px;}
+.verif-delay{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--sand-line);border-radius:12px;padding:14px 16px;font-size:0.9rem;color:var(--forest);margin-bottom:24px;}
+.verif-delay span{font-size:1.4rem;}
+</style>
+
+<div class="verif-wrap">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Vérification d'identité</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">On vérifie que tu es bien toi</h1>
+    <p class="lede" style="text-align:left;">Pour que chacun puisse rencontrer des personnes réelles, en toute confiance.</p>
+  </div>
+
+  <div class="verif-info">
+    <strong>🌿 Comment ça marche ?</strong>
+    Envoie une photo de ta pièce d'identité et un selfie daté. L'équipe Neïa vérifie manuellement chaque dossier — tes documents ne sont pas conservés après vérification.
+  </div>
+
+  <div class="verif-delay">
+    <span>⏱️</span>
+    <div>Délai de vérification : <strong>48h maximum</strong> après envoi de ton dossier.</div>
+  </div>
+
+  <!-- PIÈCE D'IDENTITÉ -->
+  <div class="verif-section">
+    <h3>Pièce d'identité</h3>
+    <p>Carte nationale d'identité ou passeport en cours de validité.</p>
+
+    <label>
+      <div class="verif-upload" id="uploadRectoZone">
+        <div class="verif-upload-icon">🪪</div>
+        <p>Recto de ta pièce d'identité</p>
+        <p class="filename" id="uploadRectoName" style="display:none;"></p>
+      </div>
+      <input type="file" accept="image/*,.pdf" style="display:none;" onchange="handleVerifUpload(this,'uploadRectoZone','uploadRectoName')">
+    </label>
+
+    <label style="margin-top:10px;display:block;">
+      <div class="verif-upload" id="uploadVersoZone">
+        <div class="verif-upload-icon">🪪</div>
+        <p>Verso <span style="color:var(--sage);">(carte d'identité uniquement)</span></p>
+        <p class="filename" id="uploadVersoName" style="display:none;"></p>
+      </div>
+      <input type="file" accept="image/*,.pdf" style="display:none;" onchange="handleVerifUpload(this,'uploadVersoZone','uploadVersoName')">
+    </label>
+  </div>
+
+  <!-- SELFIE DATÉ -->
+  <div class="verif-section">
+    <h3>Selfie daté</h3>
+    <p>Tiens une feuille avec la date d'aujourd'hui écrite à la main, et prends un selfie. Ton visage doit être clairement visible.</p>
+
+    <div style="background:var(--sand);border-radius:12px;padding:14px 16px;font-size:0.88rem;color:var(--forest);margin-bottom:12px;">
+      📅 Date à écrire sur ta feuille : <strong id="dateAujourdhui"></strong>
+    </div>
+
+    <label>
+      <div class="verif-upload" id="uploadSelfieZone">
+        <div class="verif-upload-icon">🤳</div>
+        <p>Ton selfie daté</p>
+        <p class="filename" id="uploadSelfieName" style="display:none;"></p>
+      </div>
+      <input type="file" accept="image/*" style="display:none;" onchange="handleVerifUpload(this,'uploadSelfieZone','uploadSelfieName')">
+    </label>
+  </div>
+
+  <div style="background:#fff;border:1px solid var(--sand-line);border-radius:12px;padding:14px 16px;font-size:0.84rem;color:var(--sage);margin-bottom:24px;">
+    🔒 Tes documents sont transmis de façon sécurisée et supprimés dès la vérification effectuée. Ils ne sont jamais partagés avec d'autres utilisateurs.
+  </div>
+
+  <div style="text-align:center;">
+    <button class="btn" onclick="verifSubmit()" style="min-width:220px;">Envoyer mon dossier 🌿</button>
+    <p class="form-note" id="verifNote" style="margin-top:14px;"></p>
+  </div>
+</div>
+</div>
+
+<script>
+  // Date du jour pour le selfie
+  const dateEl = document.getElementById('dateAujourdhui');
+  if(dateEl){
+    const now = new Date();
+    dateEl.textContent = now.toLocaleDateString('fr-FR', {day:'numeric', month:'long', year:'numeric'});
+  }
+
+  function handleVerifUpload(input, zoneId, nameId){
+    const file = input.files[0];
+    if(!file) return;
+    const zone = document.getElementById(zoneId);
+    const name = document.getElementById(nameId);
+    zone.classList.add('has-file');
+    name.textContent = '✓ ' + file.name;
+    name.style.display = 'block';
+  }
+
+  function verifSubmit(){
+    const note = document.getElementById('verifNote');
+    note.textContent = 'Dossier envoyé 🌿 On te répond dans les 48h.';
+    note.style.color = 'var(--forest)';
+  }
+</script>
+
+<!-- PAGE SIGNALEMENT -->
+<div class="page" id="page-signalement" style="display:none;">
+<style>
+.signal-wrap{max-width:600px;margin:0 auto;padding:40px 28px 80px;}
+.signal-info{background:var(--sand);border-radius:16px;padding:18px 20px;margin-bottom:28px;font-size:0.94rem;color:var(--forest);}
+.signal-info strong{display:block;margin-bottom:6px;}
+.signal-field{margin-bottom:20px;}
+.signal-field label{display:block;font-size:0.88rem;font-weight:700;color:var(--forest);margin-bottom:8px;}
+.signal-field select,.signal-field input,.signal-field textarea{width:100%;font-family:inherit;font-size:0.97rem;padding:13px 16px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;color:var(--ink);outline-offset:3px;}
+.signal-field select:focus-visible,.signal-field input:focus-visible,.signal-field textarea:focus-visible{outline:2px solid var(--forest);}
+.signal-field textarea{min-height:110px;resize:vertical;}
+.signal-anon{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--sand-line);border-radius:12px;padding:14px 16px;font-size:0.9rem;color:var(--forest);margin-bottom:24px;}
+.signal-anon span{font-size:1.3rem;}
+</style>
+
+<div class="signal-wrap">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Signalement</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">Signaler un problème</h1>
+    <p class="lede" style="text-align:left;">Neïa est un espace safe. Chaque signalement est lu et traité avec soin.</p>
+  </div>
+
+  <div class="signal-anon">
+    <span>🔒</span>
+    <div>Ce signalement est <strong>anonyme</strong> — ton identité ne sera pas communiquée à la personne signalée.</div>
+  </div>
+
+  <div class="signal-field">
+    <label>Type de signalement *</label>
+    <select id="signal-type" required>
+      <option value="">— Choisir —</option>
+      <option>Comportement inapproprié</option>
+      <option>Harcèlement</option>
+      <option>Usurpation d'identité</option>
+      <option>Contenu offensant</option>
+      <option>Autre</option>
+    </select>
+  </div>
+
+  <div class="signal-field">
+    <label>Profil concerné <span style="font-weight:400;color:var(--sage);">(pseudo ou identifiant, si tu le connais)</span></label>
+    <input type="text" id="signal-profil" placeholder="Ex : @marie_neïa ou l'identifiant du profil">
+  </div>
+
+  <div class="signal-field">
+    <label>Décris ce qu'il s'est passé *</label>
+    <textarea id="signal-desc" placeholder="Explique la situation avec le plus de détails possible. Plus c'est précis, mieux on peut agir." required></textarea>
+  </div>
+
+  <div class="signal-field">
+    <label>Capture d'écran <span style="font-weight:400;color:var(--sage);">(facultatif mais utile)</span></label>
+    <label style="cursor:pointer;">
+      <div class="verif-upload" id="signalUploadZone">
+        <div class="verif-upload-icon">📎</div>
+        <p>Ajouter une capture d'écran</p>
+        <p class="filename" id="signalUploadName" style="display:none;"></p>
+      </div>
+      <input type="file" accept="image/*" style="display:none;" onchange="handleVerifUpload(this,'signalUploadZone','signalUploadName')">
+    </label>
+  </div>
+
+  <div style="background:var(--sand);border-radius:12px;padding:14px 16px;font-size:0.84rem;color:var(--forest);margin-bottom:24px;">
+    🌿 Chaque signalement est examiné par l'équipe Neïa dans les <strong>24h</strong>. Si nécessaire, le profil concerné peut être suspendu le temps de l'enquête.
+  </div>
+
+  <div style="text-align:center;">
+    <button class="btn" onclick="signalSubmit()" style="min-width:220px;">Envoyer le signalement</button>
+    <p class="form-note" id="signalNote" style="margin-top:14px;"></p>
+  </div>
+</div>
+</div>
+
+<script>
+  function signalSubmit(){
+    const type = document.getElementById('signal-type').value;
+    const desc = document.getElementById('signal-desc').value.trim();
+    const note = document.getElementById('signalNote');
+    if(!type || !desc){
+      note.textContent = 'Merci de remplir les champs obligatoires.';
+      note.style.color = 'red';
+      return;
+    }
+    note.textContent = 'Signalement reçu 🌿 On s\u2019en occupe dans les 24h.';
+    note.style.color = 'var(--forest)';
+  }
+</script>
+
+<!-- PAGE CONTACT -->
+<div class="page" id="page-contact" style="display:none;">
+<style>
+.contact-wrap{max-width:560px;margin:0 auto;padding:40px 28px 80px;}
+.contact-field{margin-bottom:20px;}
+.contact-field label{display:block;font-size:0.88rem;font-weight:700;color:var(--forest);margin-bottom:8px;}
+.contact-field input,.contact-field select,.contact-field textarea{width:100%;font-family:inherit;font-size:0.97rem;padding:13px 16px;border-radius:14px;border:1.5px solid var(--sand-line);background:#fff;color:var(--ink);outline-offset:3px;}
+.contact-field input:focus-visible,.contact-field select:focus-visible,.contact-field textarea:focus-visible{outline:2px solid var(--forest);}
+.contact-field textarea{min-height:130px;resize:vertical;}
+</style>
+
+<div class="contact-wrap">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Contact</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">On t'écoute</h1>
+    <p class="lede" style="text-align:left;">Une question, un problème, une opportunité — écris-nous.</p>
+  </div>
+
+  <div class="contact-field">
+    <label>Sujet *</label>
+    <select id="contact-sujet" required>
+      <option value="">— Choisir —</option>
+      <option>Question générale</option>
+      <option>Problème technique</option>
+      <option>Presse / partenariat</option>
+      <option>Autre</option>
+    </select>
+  </div>
+
+  <div class="contact-field">
+    <label>Ton email *</label>
+    <input type="email" id="contact-email" placeholder="ton@email.fr" required>
+  </div>
+
+  <div class="contact-field">
+    <label>Ton message *</label>
+    <textarea id="contact-message" placeholder="Dis-nous ce qu'il se passe..." required></textarea>
+  </div>
+
+  <div style="text-align:center;">
+    <button class="btn" onclick="contactSubmit()" style="min-width:220px;">Envoyer 🌿</button>
+    <p class="form-note" id="contactNote" style="margin-top:14px;"></p>
+  </div>
+</div>
+</div>
+
+<script>
+  function contactSubmit(){
+    const sujet = document.getElementById('contact-sujet').value;
+    const email = document.getElementById('contact-email').value.trim();
+    const message = document.getElementById('contact-message').value.trim();
+    const note = document.getElementById('contactNote');
+    if(!sujet || !email || !message){
+      note.textContent = 'Merci de remplir tous les champs.';
+      note.style.color = 'red';
+      return;
+    }
+    note.textContent = 'Message envoyé 🌿 On te répond bientôt.';
+    note.style.color = 'var(--forest)';
+  }
+</script>
+
+<!-- PAGE PREMIUM -->
+<div class="page" id="page-premium">
+<style>
+.premium-wrap{max-width:900px;margin:0 auto;padding:40px 28px 80px;}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:40px;}
+.pricing-card{border-radius:20px;padding:32px 28px;position:relative;display:flex;flex-direction:column;}
+.pricing-card.free{background:#fff;border:2px solid var(--sand-line);}
+.pricing-card.premium{background:var(--forest);color:white;}
+.pricing-card.premium-plus{background:linear-gradient(135deg,#2D5016,#C4673A);color:white;}
+.pricing-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--terracotta);color:white;font-size:0.75rem;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap;letter-spacing:0.04em;}
+.pricing-name{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;margin-bottom:8px;}
+.pricing-price{font-size:2.2rem;font-weight:800;margin-bottom:4px;font-family:'Inter',sans-serif;}
+.pricing-price span{font-size:1rem;font-weight:400;opacity:0.7;}
+.pricing-desc{font-size:0.85rem;opacity:0.75;margin-bottom:24px;line-height:1.5;}
+.pricing-features{list-style:none;display:flex;flex-direction:column;gap:10px;flex:1;}
+.pricing-features li{display:flex;align-items:flex-start;gap:10px;font-size:0.88rem;line-height:1.4;}
+.pricing-features li::before{content:'✓';font-weight:700;flex-shrink:0;margin-top:1px;}
+.pricing-card.free .pricing-features li::before{color:var(--forest);}
+.pricing-card.premium .pricing-features li::before{color:#b8d4a0;}
+.pricing-card.premium-plus .pricing-features li::before{color:#f5c9a8;}
+.pricing-btn{margin-top:28px;width:100%;font-family:'Inter',sans-serif;font-weight:700;font-size:0.95rem;padding:14px;border-radius:30px;border:none;cursor:pointer;transition:opacity .2s;}
+.pricing-card.free .pricing-btn{background:var(--forest);color:white;}
+.pricing-card.premium .pricing-btn{background:white;color:var(--forest);}
+.pricing-card.premium-plus .pricing-btn{background:rgba(255,255,255,0.2);color:white;border:2px solid rgba(255,255,255,0.5);}
+.pricing-btn:hover{opacity:0.85;}
+.pricing-note{text-align:center;font-size:0.82rem;color:var(--sage);margin-top:28px;}
+.premium-intro{text-align:center;max-width:560px;margin:0 auto;}
+</style>
+
+<div class="premium-wrap">
+  <div class="page-head" style="text-align:center;padding-top:20px;">
+    <span class="eyebrow">Nos offres</span>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.4rem);">Choisis ton rythme</h1>
+    <p class="lede">Tu as exploré toutes les possibilités de la version gratuite, tu souhaites aller plus loin, ou tu es prêt·e pour une rencontre.</p>
+  </div>
+
+  <div class="pricing-grid">
+
+    <!-- GRATUIT -->
+    <div class="pricing-card free">
+      <div class="pricing-name" style="color:var(--forest);">Gratuit</div>
+      <div class="pricing-price" style="color:var(--forest);">0€<span>/mois</span></div>
+      <p class="pricing-desc" style="color:var(--sage);">Pour découvrir Neïa et rencontrer à ton rythme.</p>
+      <ul class="pricing-features" style="color:var(--ink);">
+        <li>Profil complet avec fonctionnement</li>
+        <li>Messagerie de base</li>
+        <li>Accès aux suggestions de profils</li>
+        <li>Inscription sur liste d'attente prioritaire</li>
+        <li>Vérification d'identité incluse</li>
+      </ul>
+      <button class="pricing-btn" onclick="document.getElementById('page-nous-rejoindre').style.display='block';document.getElementById('page-premium').style.display='none';">
+        Rejoindre la liste d'attente
+      </button>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="pricing-card premium">
+      <div class="pricing-badge">Le plus populaire</div>
+      <div class="pricing-name">Premium</div>
+      <div class="pricing-price">9,99€<span>/mois</span></div>
+      <p class="pricing-desc">Pour ceux qui veulent des outils adaptés à leur fonctionnement.</p>
+      <ul class="pricing-features">
+        <li>Tout le gratuit</li>
+        <li>Voir qui a consulté ton profil</li>
+        <li>Mode "bulle" — envoie quand tu es prêt·e</li>
+        <li>Pause relationnelle sans perdre son profil</li>
+        <li>Messages vocaux</li>
+        <li>Appel vidéo avec salle d'attente</li>
+        <li>Badge profil vérifié visible</li>
+      </ul>
+      <button class="pricing-btn">Bientôt disponible</button>
+    </div>
+
+    <!-- PREMIUM+ -->
+    <div class="pricing-card premium-plus">
+      <div class="pricing-name">Premium+</div>
+      <div class="pricing-price">19,99€<span>/mois</span></div>
+      <p class="pricing-desc">L'expérience Neïa complète, pour aller au fond des choses.</p>
+      <ul class="pricing-features">
+        <li>Tout le Premium</li>
+        <li>Rapport de compatibilité détaillé</li>
+        <li>Suggestions ultra-ciblées</li>
+        <li>Journal de bord des échanges</li>
+        <li>Rappels doux personnalisés</li>
+        <li>Statistiques de ton profil</li>
+        <li>Accès prioritaire aux nouveautés</li>
+      </ul>
+      <button class="pricing-btn">Bientôt disponible</button>
+    </div>
+
+  </div>
+
+  <p class="pricing-note">Sans engagement — résiliable à tout moment. Aucune carte bancaire requise pour le gratuit.</p>
+</div>
+</div>
+<!-- PAGE MENTIONS LÉGALES -->
+<div class="page" id="page-mentions-legales">
+<div style="max-width:720px;margin:0 auto;padding:40px 28px 80px;">
+  <div class="page-head" style="text-align:left;padding-top:20px;">
+    <span class="eyebrow">Informations légales</span>
+    <h1 style="font-size:clamp(1.6rem,4vw,2.2rem);">Mentions légales</h1>
+  </div>
+
+  <div style="display:grid;gap:32px;margin-top:32px;">
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Éditeur du site</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        Le site <strong>neia-rencontres.fr</strong> est édité par :<br>
+        <strong>Lidwine WARZÉE</strong><br>
+        Auto-entrepreneur<br>
+        Quimperlé (29), France<br>
+        Email : <a href="mailto:contact@neia-rencontres.fr" style="color:var(--forest);">contact@neia-rencontres.fr</a>
+      </p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Hébergement</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        Ce site est hébergé par :<br>
+        <strong>Netlify, Inc.</strong><br>
+        2325 3rd Street, Suite 215<br>
+        San Francisco, CA 94107, États-Unis<br>
+        <a href="https://netlify.com" target="_blank" style="color:var(--forest);">netlify.com</a>
+      </p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Propriété intellectuelle</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        L'ensemble du contenu de ce site (textes, images, logo, charte graphique) est la propriété exclusive de <strong>Lidwine WARZÉE / Neïa</strong>, sauf mention contraire.<br><br>
+        Toute reproduction, distribution ou utilisation sans autorisation écrite préalable est interdite.
+      </p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Données personnelles (RGPD)</h2>
+      <p style="margin:0 0 12px;color:#4A4438;font-size:0.96rem;line-height:1.8;">Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés :</p>
+      <ul style="margin:0;padding-left:20px;color:#4A4438;font-size:0.96rem;line-height:1.8;display:grid;gap:6px;">
+        <li>Les données collectées via le formulaire de contact sont utilisées uniquement pour répondre à vos demandes.</li>
+        <li>Elles ne sont ni vendues, ni transmises à des tiers.</li>
+        <li>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données.</li>
+      </ul>
+      <p style="margin:12px 0 0;color:#4A4438;font-size:0.96rem;">Pour exercer ces droits : <a href="mailto:contact@neia-rencontres.fr" style="color:var(--forest);">contact@neia-rencontres.fr</a></p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Cookies</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        Ce site utilise des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire n'est utilisé.<br><br>
+        Vous pouvez refuser les cookies via le bandeau affiché lors de votre première visite.
+      </p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Responsabilité</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        Neïa s'efforce de fournir des informations exactes et à jour. Cependant, la responsabilité du site ne saurait être engagée en cas d'erreurs ou d'omissions.
+      </p>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--sand-line);border-radius:20px;padding:28px 28px;">
+      <h2 style="font-size:1.1rem;margin-bottom:16px;color:var(--forest);">Contact</h2>
+      <p style="margin:0;color:#4A4438;font-size:0.96rem;line-height:1.8;">
+        Pour toute question : <a href="mailto:contact@neia-rencontres.fr" style="color:var(--forest);">contact@neia-rencontres.fr</a>
+      </p>
+    </div>
+
+    <p style="text-align:center;font-size:0.82rem;color:var(--sage);margin:0;">Dernière mise à jour : juin 2026</p>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
