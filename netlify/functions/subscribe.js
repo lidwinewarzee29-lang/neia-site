@@ -1,31 +1,48 @@
+const https = require('https');
+
 exports.handler = async function(event) {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
   try {
-    const { email, listIds, updateEnabled } = JSON.parse(event.body);
+    const { email } = JSON.parse(event.body);
 
-    const response = await fetch('https://api.brevo.com/v3/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key': process.env.BREVO_API_KEY
-      },
-      body: JSON.stringify({ email, listIds, updateEnabled })
+    const data = JSON.stringify({
+      email: email,
+      listIds: [3],
+      updateEnabled: true
     });
 
-    const data = response.status === 204 ? {} : await response.json();
+    return new Promise((resolve) => {
+      const options = {
+        hostname: 'api.brevo.com',
+        path: '/v3/contacts',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': process.env.BREVO_API_KEY,
+          'Content-Length': Buffer.byteLength(data)
+        }
+      };
 
-    return {
-      statusCode: response.status,
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    };
+      const req = https.request(options, (res) => {
+        if (res.statusCode === 201 || res.statusCode === 204) {
+          resolve({ statusCode: 200, body: JSON.stringify({ success: true }) });
+        } else {
+          resolve({ statusCode: 400, body: JSON.stringify({ error: 'Erreur Brevo' }) });
+        }
+      });
+
+      req.on('error', (e) => {
+        resolve({ statusCode: 500, body: JSON.stringify({ error: e.message }) });
+      });
+
+      req.write(data);
+      req.end();
+    });
+
   } catch (err) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Erreur serveur' })
-    };
+    return { statusCode: 500, body: JSON.stringify({ error: err.message }) };
   }
 };
